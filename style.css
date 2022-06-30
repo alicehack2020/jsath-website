@@ -1,0 +1,10 @@
+.mainImage{
+    width: 400px;
+    height: 400px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
