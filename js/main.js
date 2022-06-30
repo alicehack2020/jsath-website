@@ -14,7 +14,6 @@ async function mainData()
     }
      
 }
- 
 function append(data)
 {
    let main=document.getElementById("main")
@@ -34,8 +33,10 @@ function append(data)
 
     let button=document.createElement("button")
     button.innerText="play Video"
-    button.addEventListener("click",{
-       
+    button.addEventListener("click",function(){
+        localStorage.setItem("videoLink",JSON.stringify(ele.VideoLink))
+        localStorage.setItem("imageLink",JSON.stringify(ele.imageLink))
+         window.location="../html/videoPage.html"
     })
  
     div.append(img,title,id,button)
